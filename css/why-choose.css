@@ -1,0 +1,79 @@
+.why-choose {
+    padding: 6rem 0;
+    background: var(--light-bg);
+}
+
+.why-choose .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.why-choose h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Add to your existing why-choose.css file */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.benefit-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1);
+}
+
+.benefit-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.benefit-description {
+    color: #666;
+    line-height: 1.6;
+}

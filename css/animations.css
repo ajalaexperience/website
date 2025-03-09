@@ -1,0 +1,267 @@
+/* Add these styles to your existing animations.css file */
+
+/* Feature and benefit card animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animations for grid items */
+.features-grid .feature-card:nth-child(1) { transition-delay: 0.1s; }
+.features-grid .feature-card:nth-child(2) { transition-delay: 0.2s; }
+.features-grid .feature-card:nth-child(3) { transition-delay: 0.3s; }
+.features-grid .feature-card:nth-child(4) { transition-delay: 0.4s; }
+.features-grid .feature-card:nth-child(5) { transition-delay: 0.5s; }
+.features-grid .feature-card:nth-child(6) { transition-delay: 0.6s; }
+
+/* Benefits grid staggered animations */
+.benefits-grid .benefit-card:nth-child(1) { transition-delay: 0.1s; }
+.benefits-grid .benefit-card:nth-child(2) { transition-delay: 0.2s; }
+.benefits-grid .benefit-card:nth-child(3) { transition-delay: 0.3s; }
+.benefits-grid .benefit-card:nth-child(4) { transition-delay: 0.4s; }
+
+/* Connecting lines between cards */
+.connecting-line {
+    position: absolute;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    height: 2px;
+    width: 0;
+    transition: width 1s ease;
+    z-index: 1;
+}
+
+/* Feature card connecting lines */
+.feature-card {
+    position: relative;
+}
+
+.feature-card .connecting-line {
+    top: 50%;
+    right: -50%;
+    width: 0;
+}
+
+.feature-card .connecting-line.animated {
+    width: 100%;
+}
+
+/* Benefit card connecting lines */
+.benefit-card {
+    position: relative;
+}
+
+.benefit-card .connecting-line {
+    top: 50%;
+    right: -50%;
+    width: 0;
+}
+
+.benefit-card .connecting-line.animated {
+    width: 100%;
+}
+
+/* Adjust connecting lines for different screen sizes */
+@media (max-width: 768px) {
+    .connecting-line {
+        display: none;
+    }
+}
+
+/* Testimonials staggered animations */
+.testimonials-grid .testimonial-card:nth-child(1) { transition-delay: 0.1s; }
+.testimonials-grid .testimonial-card:nth-child(2) { transition-delay: 0.3s; }
+.testimonials-grid .testimonial-card:nth-child(3) { transition-delay: 0.5s; }
+
+/* Button hover animations */
+.cta-button.primary:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 56, 92, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 56, 92, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 56, 92, 0);
+    }
+}
+
+/* Floating animation for hero elements */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s linear infinite;
+}
+
+/* Shine effect for cards */
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+
+.shine:hover::before {
+    left: 125%;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    transition: all 0.3s ease;
+}
+
+.mobile-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Nav links mobile animation */
+.nav-links {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-out;
+    }
+    
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .nav-links li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transition-delay: calc(0.1s * var(--i));
+    }
+    
+    .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll indicator animation */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+.scroll-indicator .chevron {
+    margin-top: 10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* Feature card animations */
+.feature-card.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.feature-card.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animations for maze items */
+.features-maze .feature-card:nth-child(1) { transition-delay: 0.1s; }
+.features-maze .feature-card:nth-child(2) { transition-delay: 0.3s; }
+.features-maze .feature-card:nth-child(3) { transition-delay: 0.5s; }
+.features-maze .feature-card:nth-child(4) { transition-delay: 0.7s; }
+.features-maze .feature-card:nth-child(5) { transition-delay: 0.9s; }
+.features-maze .feature-card:nth-child(6) { transition-delay: 1.1s; }
+
+/* Connector animations */
+.connector {
+    transition: transform 1s ease;
+    transition-delay: 0.3s;
+}

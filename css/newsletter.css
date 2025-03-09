@@ -1,0 +1,85 @@
+.newsletter {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 5rem 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.newsletter .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    background: var(--text-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #000;
+}
+
+.success-message {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    
+    .newsletter-form input {
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .newsletter-form button {
+        border-radius: 0 0 10px 10px;
+        padding: 1rem;
+    }
+}
