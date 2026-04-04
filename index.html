@@ -6,7 +6,7 @@
     <meta name="description" content="AjalaX - Your ultimate travel companion app. Plan trips, find travel buddies, discover local experiences, and manage your travel itinerary with AI-powered recommendations.">
     <meta name="keywords" content="travel app, trip planning, travel companion, social travel, activity finder, adventure planning, travel itinerary, travel buddies, AI travel planner, expense sharing, group travel">
     <meta name="author" content="AjalaX">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="AjalaX - Your Ultimate Travel Companion App">
     <meta property="og:description" content="Find adventures, connect with explorers, and plan trips effortlessly with AjalaX - the all-in-one travel companion app.">
@@ -30,31 +30,31 @@
 
     <!-- App Download Meta Tags -->
     <meta name="apple-itunes-app" content="app-id=6744975535, app-argument=https://ajalaxperience.com">
-    
+
     <title>AjalaX - Your Ultimate Travel Companion App | Plan, Connect, Explore</title>
-    
+
     <!-- Preload critical assets -->
     <link rel="preload" href="css/main.css" as="style">
     <link rel="preload" href="css/hero.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
-    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/how-it-works.css">
+    <link rel="stylesheet" href="css/social-proof.css">
     <link rel="stylesheet" href="css/testimonials.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/why-choose.css">
-    <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/animations.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
+
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -63,7 +63,6 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
-    <!-- Add this just before the closing </head> tag -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -88,11 +87,13 @@
 <body>
     <header class="header">
         <nav class="nav-container">
-            <div class="logo" id="logo">AjalaX</div>
+            <div class="logo" id="logo">
+                AJALA<span class="logo-x">X</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#why-choose">Why Choose Us</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -106,230 +107,385 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <svg class="hero-map" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100,300 Q300,100 500,250 T900,200 Q1000,180 1100,250" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="8,8" fill="none" opacity="0.6"/>
+                    <path d="M50,400 Q250,350 450,380 T850,320 Q1050,300 1150,350" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="8,8" fill="none" opacity="0.4"/>
+                    <path d="M200,150 Q400,80 600,120 T1000,100" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="6,6" fill="none" opacity="0.3"/>
+                    <circle cx="500" cy="250" r="4" fill="#4A7CFF" opacity="0.5"/>
+                    <circle cx="900" cy="200" r="4" fill="#4A7CFF" opacity="0.5"/>
+                    <circle cx="300" cy="180" r="3" fill="#4A7CFF" opacity="0.3"/>
+                    <circle cx="700" cy="230" r="3" fill="#4A7CFF" opacity="0.3"/>
+                </svg>
+            </div>
             <div class="hero-content">
-                <h1>Your Ultimate Travel & Trip 
-                    Planning Companion</h1>
+                <h1>Your Ultimate Travel & Trip Planning Companion</h1>
                 <p>Explore, connect, and plan unforgettable adventures personalized for you.</p>
-                <div class="cta-buttons">
-                    <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="cta-button primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i> Download on App Store</a>
-                    <a href="#features" class="cta-button secondary">Learn More</a>
+                <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-apple"></i> Download the App
+                </a>
+            </div>
+            <div class="hero-items">
+                <div class="hero-item hero-item-suitcase">
+                    <i class="fas fa-suitcase-rolling"></i>
+                </div>
+                <div class="hero-item hero-item-compass">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div class="hero-item hero-item-map">
+                    <i class="fas fa-map"></i>
+                </div>
+                <div class="hero-item hero-item-passport">
+                    <i class="fas fa-passport"></i>
+                </div>
+                <div class="hero-item hero-item-plane">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="hero-item hero-item-globe">
+                    <i class="fas fa-globe-americas"></i>
                 </div>
             </div>
         </section>
 
-        <!-- After the hero section, add: -->
         <!-- Features Section -->
         <section id="features" class="features">
             <div class="container">
-                <h2>Powerful Features for Travelers</h2>
-                <div class="features-maze">
-                    <div class="feature-card" data-position="1">
-                        <div class="feature-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <h3>Plan & Manage Your Trips</h3>
-                        <p>Make your next trip stress-free. AjalaX helps you organize your itinerary, manage bookings, and coordinate with fellow travelers—all in one place.</p>
-                        <div class="connector"></div>
+                <div class="features-grid">
+                    <div class="features-header fade-in">
+                        <h2>Everything You Need to Plan the Perfect Trip</h2>
+                        <p>From discovery to booking, Ajalaxperience brings every part of your journey into one seamless experience.</p>
                     </div>
-                    <div class="feature-card" data-position="2">
-                        <div class="feature-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3>Find & Join Activities</h3>
-                        <p>Looking for a travel buddy or event partners? Our Moves Tab lets you connect with like-minded people to share experiences and split costs.</p>
-                        <div class="connector"></div>
-                    </div>
-                    <div class="feature-card" data-position="3">
-                        <div class="feature-icon">
-                            <i class="fas fa-brain"></i>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-magic"></i>
                         </div>
                         <h3>AI-Powered Trip Planner</h3>
-                        <p>Your smart travel assistant! Get personalized recommendations, itinerary suggestions, and seamless activity scheduling with our AI Planner.</p>
-                        <div class="connector"></div>
+                        <p>Create personalized travel plans in minutes. Our intelligent system helps you organize destinations, activities, and schedules based on your preferences.</p>
                     </div>
-                    <div class="feature-card" data-position="4">
-                        <div class="feature-icon">
-                            <i class="fas fa-comments"></i>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-search-location"></i>
                         </div>
-                        <h3>Seamless Social Connections</h3>
-                        <p>Connect with travelers, form groups, and exchange reviews to enhance your travel experiences.</p>
-                        <div class="connector"></div>
+                        <h3>Find & Join Activities</h3>
+                        <p>Find handpicked tours, attractions, and experiences designed to match your interests and make your trip unique.</p>
                     </div>
-                    <div class="feature-card" data-position="5">
-                        <div class="feature-icon">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Connect With Explorers</h3>
+                        <p>Meet like-minded explorers, join group trips, or plan adventures with friends because great journeys are better shared.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
                             <i class="fas fa-wallet"></i>
                         </div>
-                        <h3>Expense Management</h3>
-                        <p>Split bills, track expenses, and manage your travel budget effortlessly with our integrated financial tools.</p>
-                        <div class="connector"></div>
+                        <h3>Expense Sharing & Budget Tools</h3>
+                        <p>Keep your trip spending in check with simple budget tools that help you track costs, split expenses, and stay organized.</p>
                     </div>
-                    <div class="feature-card" data-position="6">
-                        <div class="feature-icon">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
                             <i class="fas fa-concierge-bell"></i>
                         </div>
                         <h3>Service Bookings</h3>
-                        <p>Connect with verified vendors for car rentals, accommodations, and travel services all within the app.</p>
+                        <p>Book accommodations, transportation, and travel services in one place effortlessly from start to finish.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Section -->
-        <section id="why-choose" class="why-choose">
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
             <div class="container">
-                <h2>Why Choose AjalaX?</h2>
-                <div class="benefits-grid">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-compass"></i>
+                <div class="section-header fade-in">
+                    <span class="section-label">HOW IT WORKS</span>
+                    <h2>From idea to itinerary in four steps</h2>
+                    <p>Ajalaxperience makes travel planning effortless from choosing a destination to enjoying the experience, all in one place.</p>
+                </div>
+
+                <div class="steps">
+                    <!-- Step 1 -->
+                    <div class="step fade-in">
+                        <div class="step-phone">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen phone-screen-1">
+                                    <div class="mock-greeting">Good Morning, Steve</div>
+                                    <div class="mock-search">
+                                        <i class="fas fa-search"></i>
+                                        <span>Just type your dream destination, we'll handle the plan</span>
+                                    </div>
+                                    <div class="mock-tabs">
+                                        <span class="mock-tab active">My Plan</span>
+                                        <span class="mock-tab">Explorers</span>
+                                    </div>
+                                    <div class="mock-cta-bar">
+                                        <i class="fas fa-compass"></i>
+                                        Your adventure starts here
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="benefit-title">All-in-One Travel Companion</h3>
-                        <p class="benefit-description">Plan, connect, and explore effortlessly with our comprehensive travel platform.</p>
+                        <div class="step-content">
+                            <div class="step-number">01</div>
+                            <h3>Choose Your Destination</h3>
+                            <p>Start by selecting where you're going, your travel dates, and the kind of experience you want: adventure, leisure, culture, or a mix of everything.</p>
+                            <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="step-cta" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-rocket"></i> Start your first trip
+                            </a>
+                        </div>
                     </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-robot"></i>
+
+                    <!-- Step 2 -->
+                    <div class="step step-reverse fade-in">
+                        <div class="step-phone">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen phone-screen-2">
+                                    <div class="mock-day-tabs">
+                                        <span class="mock-day active">Day 2</span>
+                                        <span class="mock-day">Day 3</span>
+                                    </div>
+                                    <div class="mock-date">Sat, Feb 1 2026</div>
+                                    <div class="mock-activity">
+                                        <div class="mock-time">9:30 am</div>
+                                        <div class="mock-activity-card">
+                                            <div class="mock-activity-title">Swimming</div>
+                                            <div class="mock-activity-meta">Cappadocia, Turkey</div>
+                                        </div>
+                                    </div>
+                                    <div class="mock-activity">
+                                        <div class="mock-time">11:00 am</div>
+                                        <div class="mock-activity-card">
+                                            <div class="mock-activity-title">Cycling</div>
+                                            <div class="mock-activity-meta">Cappadocia, Turkey</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="benefit-title">AI-Powered Smart Planning</h3>
-                        <p class="benefit-description">Get personalized trip recommendations tailored to your preferences.</p>
+                        <div class="step-content">
+                            <div class="step-number">02</div>
+                            <h3>Explore & Build Your Trip</h3>
+                            <p>Explore curated activities, attractions, and experiences tailored to your favorites to create a personalized trip plan that fits you.</p>
+                        </div>
                     </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-users"></i>
+
+                    <!-- Step 3 -->
+                    <div class="step fade-in">
+                        <div class="step-phone">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen phone-screen-3">
+                                    <div class="mock-screen-title">Pending request</div>
+                                    <div class="mock-search-bar">
+                                        <i class="fas fa-search"></i>
+                                        <span>Search Explorers</span>
+                                    </div>
+                                    <div class="mock-request-item">
+                                        <div class="mock-avatar"></div>
+                                        <div class="mock-request-name">Alexandra</div>
+                                        <div class="mock-request-actions">
+                                            <span class="mock-accept"></span>
+                                            <span class="mock-decline"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-request-item">
+                                        <div class="mock-avatar"></div>
+                                        <div class="mock-request-name">Travel_V</div>
+                                        <div class="mock-request-actions">
+                                            <span class="mock-accept"></span>
+                                            <span class="mock-decline"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-share-btn">
+                                        <i class="fas fa-share-alt"></i> Share trip link
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="benefit-title">Seamless Social Experience</h3>
-                        <p class="benefit-description">Meet new people and share unforgettable adventures together.</p>
+                        <div class="step-content">
+                            <div class="step-number">03</div>
+                            <h3>Connect & Organize</h3>
+                            <p>Travel solo or with others. Invite friends, join group trips, manage budgets, and keep all your trip details organized in one shared space.</p>
+                        </div>
                     </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">
-                            <i class="fas fa-shield-alt"></i>
+
+                    <!-- Step 4 -->
+                    <div class="step step-reverse fade-in">
+                        <div class="step-phone">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen phone-screen-4">
+                                    <div class="mock-trip-image">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                    <div class="mock-trip-title">Trip to Cappadocia</div>
+                                    <div class="mock-trip-meta">
+                                        <span><i class="fas fa-map-marker-alt"></i> Cappadocia, Turkey</span>
+                                        <span><i class="fas fa-calendar"></i> Jun 1 — 12, 2025</span>
+                                    </div>
+                                    <div class="mock-trip-tabs">
+                                        <span class="active">Itinerary</span>
+                                        <span>Expenses</span>
+                                        <span>Checklist</span>
+                                        <span>Gallery</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="benefit-title">Secure Transactions</h3>
-                        <p class="benefit-description">Safe and integrated payment system with verified vendor reviews.</p>
+                        <div class="step-content">
+                            <div class="step-number">04</div>
+                            <h3>Book & Enjoy</h3>
+                            <p>Book accommodations, transportation, and services seamlessly in one place. You can relax and focus on enjoying your journey.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    
+
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <div class="container">
+                <div class="social-proof-main">
+                    <div class="social-proof-text fade-in">
+                        <h2>Experiences That Speak for Themselves</h2>
+                        <p>Ajalaxperience helps you plan better, travel smarter, and experience more. With seamless tools and curated journeys, we make every trip simple, social, and unforgettable.</p>
+                    </div>
+                    <div class="social-proof-image fade-in">
+                        <div class="proof-image-placeholder">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-row fade-in">
+                    <div class="stat">
+                        <div class="stat-number" data-target="100">100+</div>
+                        <div class="stat-label">Successful trips planned</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">AI Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials">
             <div class="container">
-                <h2>What Explorers Say</h2>
-                <div class="testimonials-carousel">
-                    <div class="testimonial-card">
-                        <i class="fas fa-quote-right quote-icon"></i>
-                        <p class="testimonial-content">"AjalaX made my birthday trip to Jamaica unforgettable! The group coordination was effortless."</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
+                <div class="testimonials-layout">
+                    <div class="testimonials-header fade-in">
+                        <div class="quote-mark">&ldquo;</div>
+                        <h2>What our customers are saying</h2>
+                        <div class="carousel-nav">
+                            <button class="carousel-arrow prev" aria-label="Previous testimonial">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <div class="carousel-progress">
+                                <div class="carousel-progress-bar"></div>
                             </div>
-                            <div class="author-info">
-                                <div class="author-name">Adam Thompson</div>
-                                <div class="author-title">Verified Explorer</div>
+                            <button class="carousel-arrow next" aria-label="Next testimonial">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="testimonials-cards">
+                        <div class="testimonials-track">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Ryan Almeida</div>
+                                    <div class="author-date">1 day ago</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Blossom Menezes</div>
+                                    <div class="author-date">3 days ago</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-name">Sarah Johnson</div>
+                                    <div class="author-date">5 days ago</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="testimonial-card">
-                        <i class="fas fa-quote-right quote-icon"></i>
-                        <p class="testimonial-content">"Finding travel buddies for my Europe backpacking trip was a breeze with AjalaX. Made lifelong friends!"</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Sarah Johnson</div>
-                                <div class="author-title">Adventure Seeker</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-card">
-                        <i class="fas fa-quote-right quote-icon"></i>
-                        <p class="testimonial-content">"The AI trip planner saved me hours of research for my family vacation to Bali. Perfectly tailored recommendations!"</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user-circle"></i>
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Michael Rodriguez</div>
-                                <div class="author-title">Family Traveler</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-controls">
-                    <button class="carousel-control prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
-                    <div class="carousel-indicators"></div>
-                    <button class="carousel-control next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter">
-            <div class="container">
-                <h2>Join the Community</h2>
-                <p>Stay Updated & Get Exclusive Travel Tips</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="cta-button primary">Contact Us</a>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <div class="footer-grid">
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/ajalaxperience/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">AJALA<span>X</span></div>
+                        <p>Your ultimate travel & trip planning companion.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/ajalaxperience/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Download App</h4>
+                        <div class="app-download">
+                            <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i> App Store</a>
+                        </div>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Download App</h4>
-                    <div class="app-download">
-                        <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i> App Store</a>
-                    </div>
+                <div class="copyright">
+                    AjalaX &copy; 2025 &ndash; Explore More, Worry Less!
                 </div>
-            </div>
-            <div class="copyright">
-                AjalaX © 2025 – Explore More, Worry Less!
             </div>
         </footer>
     </main>
 
     <!-- JavaScript Files -->
-    <!-- Update CSS paths -->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/features.css">
-    <link rel="stylesheet" href="./css/testimonials.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/why-choose.css">
-    <link rel="stylesheet" href="./css/newsletter.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    
-    <!-- Update JavaScript paths at the bottom -->
-    <script src="./js/main.js"></script>
-    <script src="./js/navigation.js"></script>
-    <script src="./js/newsletter.js"></script>
-    <script src="./js/animations.js"></script>
-    <script src="./js/hero-background.js"></script>
-    <script src="./js/testimonials.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/testimonials.js"></script>
 </body>
 </html>
