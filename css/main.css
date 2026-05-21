@@ -77,28 +77,16 @@ img {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
 }
 
-.logo-x {
-    position: relative;
-    display: inline-block;
-}
-
-.logo-x::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    right: -4px;
-    width: 6px;
-    height: 6px;
-    background: var(--primary-color);
-    border-radius: 50%;
+.logo-icon {
+    height: 36px;
+    width: auto;
 }
 
 .nav-links {

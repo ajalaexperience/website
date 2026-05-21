@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AjalaX - Your ultimate travel companion app. Plan trips, find travel buddies, discover local experiences, and manage your travel itinerary with AI-powered recommendations.">
-    <meta name="keywords" content="travel app, trip planning, travel companion, social travel, activity finder, adventure planning, travel itinerary, travel buddies, AI travel planner, expense sharing, group travel">
-    <meta name="author" content="AjalaX">
+    <meta name="description" content="ajalax - The Social Travel Platform. Discover, plan, connect, and create memorable experiences with AI-powered recommendations.">
+    <meta name="keywords" content="travel app, trip planning, social travel platform, activity finder, adventure planning, travel itinerary, AI travel planner, expense sharing, group travel, discover experiences">
+    <meta name="author" content="ajalax">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="AjalaX - Your Ultimate Travel Companion App">
-    <meta property="og:description" content="Find adventures, connect with explorers, and plan trips effortlessly with AjalaX - the all-in-one travel companion app.">
+    <meta property="og:title" content="ajalax - The Social Travel Platform">
+    <meta property="og:description" content="Discover, plan, connect, and create memorable experiences with ajalax - the social travel platform.">
     <meta property="og:image" content="https://ajalaxperience.com/images/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -18,20 +18,20 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AjalaX - Your Ultimate Travel Companion App">
-    <meta name="twitter:description" content="Find adventures, connect with explorers, and plan trips effortlessly with AjalaX.">
+    <meta name="twitter:title" content="ajalax - The Social Travel Platform">
+    <meta name="twitter:description" content="Discover, plan, connect, and create memorable experiences with ajalax.">
     <meta name="twitter:image" content="https://ajalaxperience.com/images/og-image.jpg">
 
     <!-- Instagram & Additional Social Media -->
-    <meta property="og:image:alt" content="AjalaX - Your Ultimate Travel Companion App">
-    <meta property="og:site_name" content="AjalaX">
+    <meta property="og:image:alt" content="ajalax - The Social Travel Platform">
+    <meta property="og:site_name" content="ajalax">
     <meta property="og:locale" content="en_US">
     <meta name="thumbnail" content="https://ajalaxperience.com/images/og-image.jpg">
 
     <!-- App Download Meta Tags -->
     <meta name="apple-itunes-app" content="app-id=6744975535, app-argument=https://ajalaxperience.com">
 
-    <title>AjalaX - Your Ultimate Travel Companion App | Plan, Connect, Explore</title>
+    <title>ajalax - The Social Travel Platform | Discover, Plan, Connect</title>
 
     <!-- Preload critical assets -->
     <link rel="preload" href="css/main.css" as="style">
@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="css/features.css">
     <link rel="stylesheet" href="css/how-it-works.css">
     <link rel="stylesheet" href="css/social-proof.css">
-    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/trip-cta.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/animations.css">
 
@@ -67,10 +67,10 @@
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "AjalaX",
+      "name": "ajalax",
       "applicationCategory": "TravelApplication",
       "operatingSystem": "iOS, Android",
-      "description": "Your ultimate travel companion app. Plan trips, find travel buddies, discover local experiences, and manage your travel itinerary with AI-powered recommendations.",
+      "description": "The Social Travel Platform. Discover, plan, connect, and create memorable experiences with AI-powered recommendations.",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -87,14 +87,13 @@
 <body>
     <header class="header">
         <nav class="nav-container">
-            <div class="logo" id="logo">
-                AJALA<span class="logo-x">X</span>
-            </div>
+            <a href="#hero" class="logo" id="logo">
+                <img src="images/icon.png" alt="ajalax" class="logo-icon">
+            </a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
@@ -109,42 +108,15 @@
         <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="hero-bg">
-                <svg class="hero-map" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M100,300 Q300,100 500,250 T900,200 Q1000,180 1100,250" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="8,8" fill="none" opacity="0.6"/>
-                    <path d="M50,400 Q250,350 450,380 T850,320 Q1050,300 1150,350" stroke="#D1D5DB" stroke-width="1.5" stroke-dasharray="8,8" fill="none" opacity="0.4"/>
-                    <path d="M200,150 Q400,80 600,120 T1000,100" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="6,6" fill="none" opacity="0.3"/>
-                    <circle cx="500" cy="250" r="4" fill="#4A7CFF" opacity="0.5"/>
-                    <circle cx="900" cy="200" r="4" fill="#4A7CFF" opacity="0.5"/>
-                    <circle cx="300" cy="180" r="3" fill="#4A7CFF" opacity="0.3"/>
-                    <circle cx="700" cy="230" r="3" fill="#4A7CFF" opacity="0.3"/>
-                </svg>
+                <img src="images/headerimage.png" alt="" class="hero-bg-image">
+                <div class="hero-overlay"></div>
             </div>
             <div class="hero-content">
-                <h1>Your Ultimate Travel & Trip Planning Companion</h1>
-                <p>Explore, connect, and plan unforgettable adventures personalized for you.</p>
+                <span class="hero-tagline">The Social Travel Platform</span>
+                <h1>Discover, plan, connect, and create memorable experiences</h1>
                 <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="cta-button" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-apple"></i> Download the App
                 </a>
-            </div>
-            <div class="hero-items">
-                <div class="hero-item hero-item-suitcase">
-                    <i class="fas fa-suitcase-rolling"></i>
-                </div>
-                <div class="hero-item hero-item-compass">
-                    <i class="fas fa-compass"></i>
-                </div>
-                <div class="hero-item hero-item-map">
-                    <i class="fas fa-map"></i>
-                </div>
-                <div class="hero-item hero-item-passport">
-                    <i class="fas fa-passport"></i>
-                </div>
-                <div class="hero-item hero-item-plane">
-                    <i class="fas fa-plane"></i>
-                </div>
-                <div class="hero-item hero-item-globe">
-                    <i class="fas fa-globe-americas"></i>
-                </div>
             </div>
         </section>
 
@@ -153,21 +125,21 @@
             <div class="container">
                 <div class="features-grid">
                     <div class="features-header fade-in">
-                        <h2>Everything You Need to Plan the Perfect Trip</h2>
-                        <p>From discovery to booking, Ajalaxperience brings every part of your journey into one seamless experience.</p>
+                        <h2>Everything you need for an unforgettable experience</h2>
+                        <p>From discovery to booking, ajalax brings every part of your journey into one seamless experience.</p>
                     </div>
                     <div class="feature-card fade-in">
                         <div class="feature-icon-box">
                             <i class="fas fa-magic"></i>
                         </div>
-                        <h3>AI-Powered Trip Planner</h3>
+                        <h3>AjalaAI</h3>
                         <p>Create personalized travel plans in minutes. Our intelligent system helps you organize destinations, activities, and schedules based on your preferences.</p>
                     </div>
                     <div class="feature-card fade-in">
                         <div class="feature-icon-box">
                             <i class="fas fa-search-location"></i>
                         </div>
-                        <h3>Find & Join Activities</h3>
+                        <h3>Discover Experiences</h3>
                         <p>Find handpicked tours, attractions, and experiences designed to match your interests and make your trip unique.</p>
                     </div>
                     <div class="feature-card fade-in">
@@ -201,7 +173,7 @@
                 <div class="section-header fade-in">
                     <span class="section-label">HOW IT WORKS</span>
                     <h2>From idea to itinerary in four steps</h2>
-                    <p>Ajalaxperience makes travel planning effortless from choosing a destination to enjoying the experience, all in one place.</p>
+                    <p>ajalax makes travel planning effortless from choosing a destination to enjoying the experience, all in one place.</p>
                 </div>
 
                 <div class="steps">
@@ -209,22 +181,7 @@
                     <div class="step fade-in">
                         <div class="step-phone">
                             <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen phone-screen-1">
-                                    <div class="mock-greeting">Good Morning, Steve</div>
-                                    <div class="mock-search">
-                                        <i class="fas fa-search"></i>
-                                        <span>Just type your dream destination, we'll handle the plan</span>
-                                    </div>
-                                    <div class="mock-tabs">
-                                        <span class="mock-tab active">My Plan</span>
-                                        <span class="mock-tab">Explorers</span>
-                                    </div>
-                                    <div class="mock-cta-bar">
-                                        <i class="fas fa-compass"></i>
-                                        Your adventure starts here
-                                    </div>
-                                </div>
+                                <img src="images/home.png" alt="ajalax home screen" class="phone-screenshot">
                             </div>
                         </div>
                         <div class="step-content">
@@ -241,28 +198,7 @@
                     <div class="step step-reverse fade-in">
                         <div class="step-phone">
                             <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen phone-screen-2">
-                                    <div class="mock-day-tabs">
-                                        <span class="mock-day active">Day 2</span>
-                                        <span class="mock-day">Day 3</span>
-                                    </div>
-                                    <div class="mock-date">Sat, Feb 1 2026</div>
-                                    <div class="mock-activity">
-                                        <div class="mock-time">9:30 am</div>
-                                        <div class="mock-activity-card">
-                                            <div class="mock-activity-title">Swimming</div>
-                                            <div class="mock-activity-meta">Cappadocia, Turkey</div>
-                                        </div>
-                                    </div>
-                                    <div class="mock-activity">
-                                        <div class="mock-time">11:00 am</div>
-                                        <div class="mock-activity-card">
-                                            <div class="mock-activity-title">Cycling</div>
-                                            <div class="mock-activity-meta">Cappadocia, Turkey</div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/itinerary.png" alt="ajalax itinerary view" class="phone-screenshot">
                             </div>
                         </div>
                         <div class="step-content">
@@ -276,33 +212,7 @@
                     <div class="step fade-in">
                         <div class="step-phone">
                             <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen phone-screen-3">
-                                    <div class="mock-screen-title">Pending request</div>
-                                    <div class="mock-search-bar">
-                                        <i class="fas fa-search"></i>
-                                        <span>Search Explorers</span>
-                                    </div>
-                                    <div class="mock-request-item">
-                                        <div class="mock-avatar"></div>
-                                        <div class="mock-request-name">Alexandra</div>
-                                        <div class="mock-request-actions">
-                                            <span class="mock-accept"></span>
-                                            <span class="mock-decline"></span>
-                                        </div>
-                                    </div>
-                                    <div class="mock-request-item">
-                                        <div class="mock-avatar"></div>
-                                        <div class="mock-request-name">Travel_V</div>
-                                        <div class="mock-request-actions">
-                                            <span class="mock-accept"></span>
-                                            <span class="mock-decline"></span>
-                                        </div>
-                                    </div>
-                                    <div class="mock-share-btn">
-                                        <i class="fas fa-share-alt"></i> Share trip link
-                                    </div>
-                                </div>
+                                <img src="images/discover.png" alt="ajalax discover experiences" class="phone-screenshot">
                             </div>
                         </div>
                         <div class="step-content">
@@ -316,23 +226,7 @@
                     <div class="step step-reverse fade-in">
                         <div class="step-phone">
                             <div class="phone-frame">
-                                <div class="phone-notch"></div>
-                                <div class="phone-screen phone-screen-4">
-                                    <div class="mock-trip-image">
-                                        <i class="fas fa-mountain"></i>
-                                    </div>
-                                    <div class="mock-trip-title">Trip to Cappadocia</div>
-                                    <div class="mock-trip-meta">
-                                        <span><i class="fas fa-map-marker-alt"></i> Cappadocia, Turkey</span>
-                                        <span><i class="fas fa-calendar"></i> Jun 1 — 12, 2025</span>
-                                    </div>
-                                    <div class="mock-trip-tabs">
-                                        <span class="active">Itinerary</span>
-                                        <span>Expenses</span>
-                                        <span>Checklist</span>
-                                        <span>Gallery</span>
-                                    </div>
-                                </div>
+                                <img src="images/tripDetails.png" alt="ajalax trip details" class="phone-screenshot">
                             </div>
                         </div>
                         <div class="step-content">
@@ -351,22 +245,20 @@
                 <div class="social-proof-main">
                     <div class="social-proof-text fade-in">
                         <h2>Experiences That Speak for Themselves</h2>
-                        <p>Ajalaxperience helps you plan better, travel smarter, and experience more. With seamless tools and curated journeys, we make every trip simple, social, and unforgettable.</p>
+                        <p>ajalax helps you plan better, travel smarter, and experience more. With seamless tools and curated journeys, we make every trip simple, social, and unforgettable.</p>
                     </div>
                     <div class="social-proof-image fade-in">
-                        <div class="proof-image-placeholder">
-                            <i class="fas fa-camera"></i>
-                        </div>
+                        <img src="images/experience.jpg" alt="Travel experiences" class="proof-image">
                     </div>
                 </div>
                 <div class="stats-row fade-in">
                     <div class="stat">
-                        <div class="stat-number" data-target="100">100+</div>
-                        <div class="stat-label">Successful trips planned</div>
+                        <div class="stat-number" data-target="1000">1,000+</div>
+                        <div class="stat-label">Active trippers</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">Success Rate</div>
+                        <div class="stat-number">400+</div>
+                        <div class="stat-label">Completed trips</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">24/7</div>
@@ -376,70 +268,28 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials">
-            <div class="container">
-                <div class="testimonials-layout">
-                    <div class="testimonials-header fade-in">
-                        <div class="quote-mark">&ldquo;</div>
-                        <h2>What our customers are saying</h2>
-                        <div class="carousel-nav">
-                            <button class="carousel-arrow prev" aria-label="Previous testimonial">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <div class="carousel-progress">
-                                <div class="carousel-progress-bar"></div>
-                            </div>
-                            <button class="carousel-arrow next" aria-label="Next testimonial">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
+        <!-- Make Every Trip Count Section -->
+        <section class="trip-cta">
+            <div class="trip-cta-inner">
+                <div class="trip-cta-text">
+                    <h2>Make every trip count.</h2>
+                    <p>Join 1,000+ travelers who planned more, stressed less, and saw it all.</p>
+                    <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-apple"></i> Download the App
+                    </a>
+                </div>
+                <div class="trip-cta-grid">
+                    <div class="trip-cta-col trip-cta-col-1">
+                        <div class="trip-cta-img"><img src="images/group1.JPG" alt="Traveler"></div>
+                        <div class="trip-cta-img"><img src="images/group2.JPG" alt="Traveler"></div>
                     </div>
-                    <div class="testimonials-cards">
-                        <div class="testimonials-track">
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-name">Ryan Almeida</div>
-                                    <div class="author-date">1 day ago</div>
-                                </div>
-                            </div>
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-name">Blossom Menezes</div>
-                                    <div class="author-date">3 days ago</div>
-                                </div>
-                            </div>
-                            <div class="testimonial-card">
-                                <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-name">Sarah Johnson</div>
-                                    <div class="author-date">5 days ago</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="trip-cta-col trip-cta-col-2">
+                        <div class="trip-cta-img"><img src="images/group3.JPG" alt="Traveler"></div>
+                        <div class="trip-cta-img"><img src="images/group4.JPG" alt="Traveler"></div>
+                        <div class="trip-cta-img"><img src="images/group5.JPG" alt="Traveler"></div>
+                    </div>
+                    <div class="trip-cta-col trip-cta-col-3">
+                        <div class="trip-cta-img"><img src="images/group6.JPG" alt="Traveler"></div>
                     </div>
                 </div>
             </div>
@@ -450,33 +300,33 @@
             <div class="footer-content">
                 <div class="footer-grid">
                     <div class="footer-brand">
-                        <div class="footer-logo">AJALA<span>X</span></div>
-                        <p>Your ultimate travel & trip planning companion.</p>
+                        <div class="footer-logo">
+                            <img src="images/icon.png" alt="ajalax" class="footer-logo-icon">
+                        </div>
+                        <p>Traveling to new destinations should be an exciting adventure, not a hassle. ajalax helps you discover, plan, and share unforgettable travel experiences with a community of explorers.</p>
+                        <div class="footer-social">
+                            <span class="footer-social-label">Follow Us</span>
+                            <div class="social-links">
+                                <a href="https://www.tiktok.com/@ajalaxperience" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://x.com/ajalaxperience" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/ajalaxperience/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                                            </div>
+                        </div>
                     </div>
-                    <div class="footer-links">
-                        <h4>Quick Links</h4>
+                    <div class="footer-nav">
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="terms.html">Terms of Service</a></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="terms.html">Terms of service</a></li>
+                            <li><a href="privacy.html">Privacy policy</a></li>
                         </ul>
                     </div>
-                    <div class="footer-links">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/ajalaxperience/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        </div>
+                    <div class="footer-download">
+                        <h4>Download app</h4>
+                        <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" class="footer-download-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-apple"></i> Download the App
+                        </a>
                     </div>
-                    <div class="footer-links">
-                        <h4>Download App</h4>
-                        <div class="app-download">
-                            <a href="https://apps.apple.com/us/app/ajalax-plan-memorable-trips/id6744975535" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple"></i> App Store</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    AjalaX &copy; 2025 &ndash; Explore More, Worry Less!
                 </div>
             </div>
         </footer>
@@ -486,6 +336,5 @@
     <script src="js/main.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/animations.js"></script>
-    <script src="js/testimonials.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "sugarbanana": {
+      "source": {
+        "source": "directory",
+        "path": "./.sugarbanana"
+      }
+    }
+  }
+}

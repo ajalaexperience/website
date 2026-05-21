@@ -31,18 +31,12 @@
     justify-content: flex-end;
 }
 
-.proof-image-placeholder {
+.proof-image {
     width: 100%;
     max-width: 400px;
     aspect-ratio: 4/3;
-    background: linear-gradient(135deg, #1E293B, #334155);
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.15);
-    font-size: 3rem;
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .stats-row {
@@ -85,7 +79,7 @@
         font-size: 1.8rem;
     }
 
-    .proof-image-placeholder {
+    .proof-image {
         max-width: 100%;
     }
 

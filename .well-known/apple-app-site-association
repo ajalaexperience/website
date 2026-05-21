@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "Z3S3WBY7L4.com.ajalaxteam.ajalaxmobile",
+        "paths": [
+          "/trips/*",
+          "/creators/*",
+          "/communities/*",
+          "/home",
+          "/discover"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "Z3S3WBY7L4.com.ajalaxteam.ajalaxmobile"
+    ]
+  }
+}
